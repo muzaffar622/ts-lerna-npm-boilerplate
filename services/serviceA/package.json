@@ -1,0 +1,10 @@
+{
+  "name": "service-a",
+  "version": "1.0.0",
+  "private": true,
+  "main": "handler.ts",
+  "scripts": {
+    "linter": "npx eslint \"src/**/*.@(ts)\" --fix ; npx prettier --check \"src/**/*.@(ts)\" --write"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "service-libs",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "linter": "npx eslint \"src/**/*.@(ts)\" --fix ; npx prettier --check \"src/**/*.@(ts)\" --write"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "ts-node": "^10.0.0"
+  }
+}

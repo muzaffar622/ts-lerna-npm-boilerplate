@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "types": [
+      "node", "webpack-env"
+    ],
+    "target": "es2019",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "rootDir": ".",
+    "baseUrl": ".",
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "removeComments": true,
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "paths": {
+      "@serviceA/*": ["./services/serviceA/src/*"],
+      "@serviceB/*": ["./services/serviceB/src/*"],
+      "libs/helper": ["./libs/src/index.ts"],
+    }
+  },
+  "ts-node": {
+    "files": true
+  },
+  "files": [
+    "global.d.ts"
+  ],
+  "include": ["**/*.ts", "**/*.spec.ts", "**/*.d.ts", "**/*.json", "global.d.ts"],
+  "exclude": ["node_modules", "dist", ".serverless", ".vscode/**/*"]
+}
